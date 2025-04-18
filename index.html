@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+   <!-- load in the p5 sound library -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+    <style>
+
+       *{
+
+        background: pink;
+      }
+      
+
+      #head{
+        color: #707070;
+
+      }
+
+      #sub1{
+        color: #707070;
+      }
+
+
+
+      #sub2{
+
+        color: #707070;
+
+      }
+
+
+     
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+   <center> <h1 id="head">Welcome to my Robot game!</h1></center>
+
+    <br>
+    <p>
+      <b id="sub1">Detailes on game play:</b>
+      <br>
+      This game consists of an infinite number of robots (some with different physical features) flowing from the middle left of the screen onto a grib of arrows. By clicking the arrows, the user can control the direction that the robot(s) are going in if the robot(s) happen to be in the vicinity of an arrow. Scattered on a random selection of arrows are coins that the user should maneuver the robots to collect; each coin increases the user's score by one. Finally, after collecting the coins the user should direct the robots to the final door found on the bottom left of the screen, which will then count the number of robots that pass through it.
+
+      </p>
+      <b id="sub2">Creation of game</b>
+      <br>
+      This game consists mainly of two classes, an arrow class and a robot class. From there, I created two arrays, one from each class, and allowed them to interact in specific ways. If a robot is on a "left" arrow it moves left, if it's on a "right" arrow it moves right, and so on with up and down. The arrows detect if the mouse is clicking on them, and if it is, then with each click it moves from right to down to left to up, in that rotational order. Visual aspects such as the flickering yellow circles on the robots were added as directional indicators. Robot can have different eye styles, limbs, and colors. Arrows are loaded graphics that change their graaphics once a mouse clicks on them.
+
+      <p>
+
+
+
+
+
+      </p>
+  </body>
+</html>
